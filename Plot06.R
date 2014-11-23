@@ -1,9 +1,9 @@
 # Loads RDS
 library(ggplot2)
 
-NEI <- readRDS("data/summarySCC_PM25.rds")
+NEI <- readRDS("summarySCC_PM25.rds")
 NEI$year <- factor(NEI$year, levels = c('1999', '2002', '2005', '2008'))
-SCC <- readRDS("data/Source_Classification_Code.rds")
+SCC <- readRDS("Source_Classification_Code.rds")
 
 # Baltimore City, Maryland
 # Los Angeles County, California

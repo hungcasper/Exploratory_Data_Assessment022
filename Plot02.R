@@ -1,6 +1,6 @@
 # Loads RDS
-NEI <- readRDS("data/summarySCC_PM25.rds")
-SCC <- readRDS("data/Source_Classification_Code.rds")
+NEI <- readRDS("summarySCC_PM25.rds")
+SCC <- readRDS("Source_Classification_Code.rds")
 
 # Samples data for testing
 NEIsample <- NEI[sample(nrow(NEI), size = 5000, replace = F), ]

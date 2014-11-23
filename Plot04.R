@@ -1,8 +1,8 @@
 # Loads RDS
 require(ggplot2)
 
-NEI <- readRDS("data/summarySCC_PM25.rds")
-SCC <- readRDS("data/Source_Classification_Code.rds")
+NEI <- readRDS("summarySCC_PM25.rds")
+SCC <- readRDS("Source_Classification_Code.rds")
 
 # Coal-related SCC
 SCC.coal = SCC[grepl("coal", SCC$Short.Name, ignore.case = TRUE), ]
